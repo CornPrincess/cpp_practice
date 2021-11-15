@@ -3,7 +3,7 @@
 //
 
 #include <iostream>
-#include <cstring>
+#include <cstring> // strlen
 
 int main() {
     using namespace std;
@@ -27,7 +27,7 @@ int main() {
             " a great.\n";
     cout << "=====================================" << endl;
 
-    const int Size = 15;
+    const int Size = 9;
     char name1[Size];               // empty array
     char name2[Size] = "C++owboy";  // initialized array
     // NOTE: some implementations may require the static keyword
@@ -44,5 +44,10 @@ int main() {
 
     cout << "Here are the first 3 characters of my name: ";
     cout << name2 << endl;
+    cout << "Now, the string length of my name: ";
+    cout << strlen(name2) << endl;
+    char test[12];
+    cout << "Test empty array size of: " << sizeof test << endl;
+    cout << "Test char size of: " << sizeof (char) << endl;
     return 0;
 }
