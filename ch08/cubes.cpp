@@ -7,7 +7,7 @@
 double cube(double a);
 
 double refcube(double &ra);
-double constrefcube(double &ra);
+double testrefcube(const double &a);
 
 
 //double pcube(double *pa);
@@ -27,7 +27,7 @@ int main() {
     // pcube(&x);
     // error: cannot assign to variable 'a' with const-qualified type 'const double &'
     // constrefcube(x);
-    cout << constrefcube(y);
+    cout << testrefcube(y);
     cout << " = cube of " << y << endl;
     return 0;
 }
@@ -42,17 +42,7 @@ double refcube(double &ra) {
     return ra;
 }
 
-// compiler error
-//double pcube(const double *a) {
-//    *a += 1;
-//    return *a;
-//}
-//
-//double constrefcube(const double &a) {
-//    a += 1;
-//    return a;
-//}
-
-double constrefcube(const double &a) {
+double testrefcube(const double &a) {
+    // core 这里会生成临时变量，因此即是用的是引用传值，a的值还是不会改变，因为进行计算的是临时变量
     return a * a * a;
 }
