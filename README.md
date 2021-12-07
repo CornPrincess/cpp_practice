@@ -1,3 +1,3 @@
 # cpp_practice
 《CPP Primar Plus》 practice code
-github timeout 2
+github timeout3
