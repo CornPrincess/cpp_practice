@@ -48,7 +48,6 @@ string version1(const string &s1, const string &s2) {
 // has side effect
 const string &version2(string &s1, const string &s2) {
     s1 = s2 + s1 + s2;
-    //
     return s1;
 }
 
