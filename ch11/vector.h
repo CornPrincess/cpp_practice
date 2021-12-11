@@ -5,6 +5,8 @@
 #ifndef CPP_PRACTICE_VECTOR_H
 #define CPP_PRACTICE_VECTOR_H
 
+#include <iostream>
+
 namespace VECTOR {
     class Vector {
     public:
@@ -13,7 +15,7 @@ namespace VECTOR {
         };
     private:
         double x;
-        double xy;
+        double y;
         double mag;
         double ang;
         Mode mode;
