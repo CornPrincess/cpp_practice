@@ -124,7 +124,7 @@ namespace VECTOR {
     }
 
     std::ostream &operator<<(std::ostream &os, const Vector &v) {
-        // core 这里是友元函数，不再类作用域内，因此必须使用 vector::RECTd
+        // core 这里是友元函数，不在类作用域内，因此必须使用 vector::RECT
         if (v.mode == Vector::RECT) {
             os << "(x,y) = (" << v.x << ", " << v.y << ")";
         } else if (v.mode == Vector::POL) {
