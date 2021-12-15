@@ -22,7 +22,6 @@ String::String() {
     str = new char[1];
     str[0] = '\0';
     num_strings++;
-//    cout << "************** default constructor ************** " << num_strings;
 }
 
 String::String(const char *s) {
@@ -30,6 +29,7 @@ String::String(const char *s) {
     str = new char[len + 1];
     std::strcpy(str, s);
     num_strings++;
+    cout << "************** char *s constructor ************** " << num_strings << std::endl;
 }
 
 String::String(const String &st) {
@@ -41,8 +41,8 @@ String::String(const String &st) {
 
 String::~String() {
     num_strings--;
+    std::cout << str << " - call String destructor\n";
     delete[] str;
-    std::cout << "call String destructor\n";
 }
 
 // overload operator methods

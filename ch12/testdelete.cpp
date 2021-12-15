@@ -6,8 +6,10 @@
 #include <iostream>
 
 int main() {
+    static String staticstr = "staticstr";
     {
-        String * string = new String("test");
+        String * string = new String("newstr");
+        String autostr = String("autostr");
         std::cout << "string *: " << string << std::endl;
         std::cout << "(*string): " << *string << std::endl;
         std::cout <<  (string->HowMany()) << std::endl;
