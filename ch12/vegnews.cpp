@@ -41,18 +41,30 @@ int main() {
     }
     cout << "End of main()\n";
     return 0;
-    /*
+    /* origin
      * headline1: 0x7ff31d405930 (2 deleted)
      * headline2: 0x7ff31d405950
      * sports:    0x7ff31d405960 (3 deleted)
      * temp(copy constructor): 0x7ff31d405950 (1 deleted)
-     * sailor:    0x7ff31d405960
+     * sailor:    0x7ff31d4059 60
      * knot:      0x7ff31d405930
      * "Celery Stalks at Midnight" object (address=0x7ff31d405930)deleted, 2 left
      * "Spinach Leaves Bowl for Dollars" object (address=0x7ff31d405960)deleted, 1 left
      * Spinach Leaves Bowl for Dollars" object (address=0x7ff31d405960)deleted, 0 left
      * vegnews(66746,0x10acd1e00) malloc: *** error for object 0x7f845a405960: pointer being freed was not allocated
      */
+    /* after fix
+      * headline1: 0x7fb6cfc059c0
+      * headline2: 0x7fb6cfc059e0
+      * sports:    0x7fb6cfc059f0
+      * temp(copy constructor): 0x7fb6cfc05a10
+      * sailor:    0x7fb6cfc05a20
+      * knot:      0x7fb6cfc05a40
+      * "Celery Stalks at Midnight" object (address=0x7ff31d405930)deleted, 2 left
+      * "Spinach Leaves Bowl for Dollars" object (address=0x7ff31d405960)deleted, 1 left
+      * Spinach Leaves Bowl for Dollars" object (address=0x7ff31d405960)deleted, 0 left
+      * vegnews(66746,0x10acd1e00) malloc: *** error for object 0x7f845a405960: pointer being freed was not allocated
+   */
 }
 
 void callme1(StringBad &rsb) {
