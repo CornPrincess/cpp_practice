@@ -46,8 +46,7 @@ int main() {
                 z = means(x, y);
                 cout << "The mean of " << x << " and " << y << " is " << z << endl;
                 cout << "Enter next pair: ";
-            }
-            catch (bad_hmean &bg) {
+            } catch (bad_hmean &bg) {
                 bg.mesg();
                 cout << "Try again.\n";
                 continue;
