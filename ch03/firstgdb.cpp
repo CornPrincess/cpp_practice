@@ -5,6 +5,7 @@
 #include <iostream>
 
 int main() {
+    // success
     int nums[4] = {1, 2, 3, 4};
     for (int i = 0; i < 4; i++) {
         std::cout << nums[i] << std::endl;
