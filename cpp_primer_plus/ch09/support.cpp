@@ -6,6 +6,7 @@
 
 // use warming from another file
 extern double warming;
+static int a = 1;
 
 // function prototypes, optional
 void update(double dt);
