@@ -10,8 +10,8 @@ int sum_arr(int arr[], int n);          // prototype
 int main() {
     using namespace std;
     int cookies[ArSize] = {1, 2, 4, 8, 16, 32, 64, 128};
-// some system require preceding int with static to
-// enable array initialization
+    // some system require preceding int with static to
+    // enable array initialization
 
     int sum = sum_arr(cookies, ArSize);
     cout << "Total cookies eaten: " << sum << "\n";
