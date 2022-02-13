@@ -28,7 +28,7 @@ int main() {
 }
 
 // function template definition
-// core 模版并不创建任务函数，而只是告诉编译器如何定义函数
+// core 模版并不创建任何函数，而只是告诉编译器如何定义函数
 // core 需要交换 int 的函数时，编译器将按模版模式创建怎样的函数
 // core 模版不能缩短可执行程序，最终仍有两个独立的函数定义，就行手工方式定义了这些函数一样
 template<typename T>

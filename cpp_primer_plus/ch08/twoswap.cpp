@@ -62,8 +62,7 @@ void Swap<job>(job &j1, job &j2) {
     j2.floor = t2;
 }
 
-void Show(job &j)
-{
+void Show(job &j) {
     using namespace std;
     cout << j.name << ": $" << j.salary
          << " on floor " << j.floor << endl;
