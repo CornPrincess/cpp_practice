@@ -41,9 +41,7 @@ int main(int argc, char * argv[]) {
     }
 
     int num = getFileNum(argv[1]);
-
     printf("普通文件的个数为：%d\n", num);
-
     return 0;
 }
 
@@ -59,20 +57,15 @@ int getFileNum(const char * path) {
     }
 
     struct dirent *ptr;
-
     // 记录普通文件的个数
     int total = 0;
-
     while((ptr = readdir(dir)) != NULL) {
-
         // 获取名称
         char * dname = ptr->d_name;
-
         // 忽略掉. 和..
         if(strcmp(dname, ".") == 0 || strcmp(dname, "..") == 0) {
             continue;
         }
-
         // 判断是否是普通文件还是目录
         if(ptr->d_type == DT_DIR) {
             // 目录,需要继续读取这个目录
@@ -85,12 +78,8 @@ int getFileNum(const char * path) {
             // 普通文件
             total++;
         }
-
-
     }
-
     // 关闭目录
     closedir(dir);
-
     return total;
 }

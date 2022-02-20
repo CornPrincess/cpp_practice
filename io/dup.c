@@ -5,8 +5,6 @@
         fd=3, int fd1 = dup(fd),
         fd指向的是a.txt, fd1也是指向a.txt
         从空闲的文件描述符表中找一个最小的，作为新的拷贝的文件描述符
-
-
 */
 
 #include <unistd.h>
@@ -18,7 +16,7 @@
 
 int main() {
 
-    int fd = open("a.txt", O_RDWR | O_CREAT, 0664);
+    int fd = open("dup.txt", O_RDWR | O_CREAT, 0664);
 
     int fd1 = dup(fd);
 

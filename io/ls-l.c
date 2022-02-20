@@ -9,7 +9,7 @@
 #include <string.h>
 
 // 模拟实现 ls -l 指令
-// -rw-rw-r-- 1 nowcoder nowcoder 12 12月  3 15:48 a.txt
+// -rw-rw-r-- 1 qwskyz qwskyz 20 2月  20 15:54 a.txt
 int main(int argc, char * argv[]) {
 
     // 判断输入的参数是否正确
