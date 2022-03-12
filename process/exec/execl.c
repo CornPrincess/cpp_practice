@@ -15,7 +15,8 @@ int main() {
         // 子进程
 //        char* envp[] = {"/home/u/Desktop/Linux"};
 //        execle("/home/u/Desktop/Linux/hello", "hello", NULL, envp);
-        execl("hello", "hello", NULL);
+//        execl("hello", "hello", NULL);
+        execl("/bin/ps", "ps", "aux", NULL);
         printf("i am child process, pid : %d\n", getpid());
 
     }
