@@ -45,8 +45,6 @@ StringBad &StringBad::operator=(const StringBad &st) {
     if (this == &st) {
         return *this;
     }
-    // free old string
-    delete[] str;
     len = st.len;
     str = new char[len + 1];
     std::strcpy(str, st.str);

@@ -25,6 +25,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="/var/folders/g9/88q5nl157nq1kxh6cchrtvq5x512wp/T/leetcode/editor/cn/[202]Happy Number.cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="/var/folders/g9/88q5nl157nq1kxh6cchrtvq5x512wp/T/leetcode/editor/cn/doc/content/[202]Happy Number.md" />
+              <option name="frontendQuestionId" value="leetcode-cn.com202" />
+              <option name="host" value="leetcode-cn.com" />
+              <option name="path" value="/var/folders/g9/88q5nl157nq1kxh6cchrtvq5x512wp/T/leetcode/editor/cn/[202]Happy Number.cpp" />
+              <option name="titleSlug" value="happy-number" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="/var/folders/g9/88q5nl157nq1kxh6cchrtvq5x512wp/T/leetcode/editor/cn/[203]Remove Linked List Elements.cpp">
           <value>
             <LeetcodeEditor>
@@ -47,6 +58,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="/var/folders/g9/88q5nl157nq1kxh6cchrtvq5x512wp/T/leetcode/editor/cn/[242]Valid Anagram.cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="/var/folders/g9/88q5nl157nq1kxh6cchrtvq5x512wp/T/leetcode/editor/cn/doc/content/[242]Valid Anagram.md" />
+              <option name="frontendQuestionId" value="leetcode-cn.com242" />
+              <option name="host" value="leetcode-cn.com" />
+              <option name="path" value="/var/folders/g9/88q5nl157nq1kxh6cchrtvq5x512wp/T/leetcode/editor/cn/[242]Valid Anagram.cpp" />
+              <option name="titleSlug" value="valid-anagram" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="/var/folders/g9/88q5nl157nq1kxh6cchrtvq5x512wp/T/leetcode/editor/cn/[24]Swap Nodes in Pairs.cpp">
           <value>
             <LeetcodeEditor>
@@ -55,6 +77,61 @@
               <option name="host" value="leetcode-cn.com" />
               <option name="path" value="/var/folders/g9/88q5nl157nq1kxh6cchrtvq5x512wp/T/leetcode/editor/cn/[24]Swap Nodes in Pairs.cpp" />
               <option name="titleSlug" value="swap-nodes-in-pairs" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="/var/folders/g9/88q5nl157nq1kxh6cchrtvq5x512wp/T/leetcode/editor/cn/[349]Intersection of Two Arrays.cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="/var/folders/g9/88q5nl157nq1kxh6cchrtvq5x512wp/T/leetcode/editor/cn/doc/content/[349]Intersection of Two Arrays.md" />
+              <option name="frontendQuestionId" value="leetcode-cn.com349" />
+              <option name="host" value="leetcode-cn.com" />
+              <option name="path" value="/var/folders/g9/88q5nl157nq1kxh6cchrtvq5x512wp/T/leetcode/editor/cn/[349]Intersection of Two Arrays.cpp" />
+              <option name="titleSlug" value="intersection-of-two-arrays" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="/var/folders/g9/88q5nl157nq1kxh6cchrtvq5x512wp/T/leetcode/editor/cn/[350]Intersection of Two Arrays II.cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="/var/folders/g9/88q5nl157nq1kxh6cchrtvq5x512wp/T/leetcode/editor/cn/doc/content/[350]Intersection of Two Arrays II.md" />
+              <option name="frontendQuestionId" value="leetcode-cn.com350" />
+              <option name="host" value="leetcode-cn.com" />
+              <option name="path" value="/var/folders/g9/88q5nl157nq1kxh6cchrtvq5x512wp/T/leetcode/editor/cn/[350]Intersection of Two Arrays II.cpp" />
+              <option name="titleSlug" value="intersection-of-two-arrays-ii" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="/var/folders/g9/88q5nl157nq1kxh6cchrtvq5x512wp/T/leetcode/editor/cn/[383]Ransom Note.cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="/var/folders/g9/88q5nl157nq1kxh6cchrtvq5x512wp/T/leetcode/editor/cn/doc/content/[383]Ransom Note.md" />
+              <option name="frontendQuestionId" value="leetcode-cn.com383" />
+              <option name="host" value="leetcode-cn.com" />
+              <option name="path" value="/var/folders/g9/88q5nl157nq1kxh6cchrtvq5x512wp/T/leetcode/editor/cn/[383]Ransom Note.cpp" />
+              <option name="titleSlug" value="ransom-note" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="/var/folders/g9/88q5nl157nq1kxh6cchrtvq5x512wp/T/leetcode/editor/cn/[438]Find All Anagrams in a String.cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="/var/folders/g9/88q5nl157nq1kxh6cchrtvq5x512wp/T/leetcode/editor/cn/doc/content/[438]Find All Anagrams in a String.md" />
+              <option name="frontendQuestionId" value="leetcode-cn.com438" />
+              <option name="host" value="leetcode-cn.com" />
+              <option name="path" value="/var/folders/g9/88q5nl157nq1kxh6cchrtvq5x512wp/T/leetcode/editor/cn/[438]Find All Anagrams in a String.cpp" />
+              <option name="titleSlug" value="find-all-anagrams-in-a-string" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="/var/folders/g9/88q5nl157nq1kxh6cchrtvq5x512wp/T/leetcode/editor/cn/[49]Group Anagrams.cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="/var/folders/g9/88q5nl157nq1kxh6cchrtvq5x512wp/T/leetcode/editor/cn/doc/content/[49]Group Anagrams.md" />
+              <option name="frontendQuestionId" value="leetcode-cn.com49" />
+              <option name="host" value="leetcode-cn.com" />
+              <option name="path" value="/var/folders/g9/88q5nl157nq1kxh6cchrtvq5x512wp/T/leetcode/editor/cn/[49]Group Anagrams.cpp" />
+              <option name="titleSlug" value="group-anagrams" />
             </LeetcodeEditor>
           </value>
         </entry>
