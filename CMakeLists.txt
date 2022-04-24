@@ -3,4 +3,4 @@ project(cpp_practice)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(cpp_practice temp/solution.cpp)
+add_executable(cpp_practice  algo/sort/heap.cpp)
