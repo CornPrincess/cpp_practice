@@ -18,7 +18,7 @@ private:
 public:
     TableTennisPlayer(const string & fn = "none",
                       const string & ln = "none",
-                      bool ht = false0);
+                      bool ht = false);
     void Name() const;
     bool HasTable() const {
         return hasTable;

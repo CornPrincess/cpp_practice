@@ -49,6 +49,7 @@ std::ostream &operator<<(std::ostream &os, const baseDMA &rs) {
 
 // lacksDMA methods
 lacksDMA::lacksDMA(const char *c, const char *l, int r) : baseDMA(l, r) {
+    cout << "********lacksDMA base constructor ********" << endl;
     std::strncpy(color, c, COL_LEN - 1);
     color[COL_LEN - 1] = '\0';
 }
@@ -67,6 +68,7 @@ std::ostream &operator<<(std::ostream &os, const lacksDMA &ls) {
 
 // hasDMA methods
 hasDMA::hasDMA(const char *s, const char *l, int r) : baseDMA(l, r) {
+    cout << "********hasDMA base constructor ********" << endl;
     style = new char[std::strlen(s) + 1];
     std::strcpy(style, s);
 }

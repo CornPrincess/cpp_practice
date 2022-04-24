@@ -20,7 +20,7 @@ int main() {
     // 这里也是有两种选择，放入第i个物品，或者不放入第i个物品
     // 这里的 dp[j] 相当于二维数组的 dp[i-1][j]
     // dp[j] = max(dp[j], dp[j-weight[i]] + value[i])
-    vector<int> bag(bagWeight + 1, 0);
+    vector<int> bag(bagWeight + 1, 0);.
 
     // 3.dp数组如何初始化
     // 都初始化为0即可
