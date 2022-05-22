@@ -50,4 +50,8 @@ int main()
                   << president.country << " in " << president.year << ".\n";
     }
 
+    std::cout << elections.max_size() << std::endl;
+    std::vector<int> v2;
+    std::cout << v2.max_size() << std::endl;
+    return 0;
 }

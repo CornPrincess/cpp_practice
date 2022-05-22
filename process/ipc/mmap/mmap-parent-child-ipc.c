@@ -85,7 +85,7 @@ int main() {
 
     } else if (pid == 0) {
         // 子进程
-        strcpy((char *) ptr, "nihao a, son!!!");
+        strcpy((char *) ptr, "nihao a, son!!!\0");
     }
 
     // 关闭内存映射区

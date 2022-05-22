@@ -40,6 +40,7 @@ int main() {
             int len = read(pipefd[0], buf, sizeof(buf));
             printf("len : %d\n", len);
             printf("parent recv : %s, pid : %d\n", buf, getpid());
+            // core clear read buf
             memset(buf, 0, 1024);
             sleep(1);
         }

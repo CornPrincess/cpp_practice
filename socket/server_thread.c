@@ -26,6 +26,7 @@ void * working(void * arg) {
     // 接收客户端发来的数据
     char recvBuf[1024];
     while(1) {
+        // core read is block, so we need multi thread
         int len = read(pinfo->fd, &recvBuf, sizeof(recvBuf));
 
         if(len == -1) {
@@ -85,6 +86,7 @@ int main() {
         struct sockaddr_in cliaddr;
         int len = sizeof(cliaddr);
         // 接受连接
+        // core accept is block
         int cfd = accept(lfd, (struct sockaddr*)&cliaddr, &len);
 
         struct sockInfo * pinfo;

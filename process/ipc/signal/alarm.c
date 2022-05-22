@@ -2,7 +2,7 @@
     #include <unistd.h>
     unsigned int alarm(unsigned int seconds);
         - 功能：设置定时器（闹钟）。函数调用，开始倒计时，当倒计时为0的时候，
-                函数会给当前的进程发送一个信号：SIGALARM
+                函数会给当前的进程发送一个信号：SIGALRM
         - 参数：
             seconds: 倒计时的时长，单位：秒。如果参数为0，定时器无效（不进行倒计时，不发信号）。
                     取消一个定时器，通过alarm(0)。
@@ -28,7 +28,7 @@ int main() {
 
     sleep(1);
     seconds = alarm(1);    // 不阻塞
-    printf("seconds = %d\n", seconds);  // 3
+    printf("seconds = %d\n", seconds);  // 9
 
     while(1) {
     }

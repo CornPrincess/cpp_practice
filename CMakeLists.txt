@@ -5,8 +5,7 @@ set(CMAKE_CXX_STANDARD 11)
 
 find_package(Threads)
 
-#add_executable(cpp_practice  key_point/thread/threadCreate2.cpp)
-add_executable(cpp_practice  key_point/thread/callonce.cpp)
-add_executable(cpp_practice2  key_point/vector/emplace.cpp)
+add_executable(cpp_practice  key_point/stl/unordered_map_practice.cpp)
+#add_executable(cpp_practice  key_point/vector/emplace2.cpp)
 
 target_link_libraries (${PROJECT_NAME} ${CMAKE_THREAD_LIBS_INIT})

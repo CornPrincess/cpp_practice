@@ -53,7 +53,7 @@ int main() {
                 int len = sizeof(cliaddr);
                 int cfd = accept(lfd, (struct sockaddr *) &cliaddr, &len);
 
-                // 设置cfd属性非阻塞
+                // core 设置cfd属性非阻塞
                 int flag = fcntl(cfd, F_GETFL);
                 flag | O_NONBLOCK;
                 fcntl(cfd, F_SETFL, flag);
@@ -78,6 +78,8 @@ int main() {
                 }
                 if (len == 0) {
                     printf("client closed....");
+                    epoll_ctl(epfd, EPOLL_CTL_DEL, curfd, NULL);
+                    close(curfd);
                 } else if (len == -1) {
                     if (errno == EAGAIN) {
                         printf("data over.....");

@@ -62,11 +62,11 @@ int main() {
             // 向管道中写入数据
             char * str = "hello,i am child";
             write(pipefd[1], str, strlen(str));
-//            sleep(1);
+            sleep(1);
 
-//             int len = read(pipefd[0], buf, sizeof(buf));
-//             printf("child recv : %s, pid : %d\n", buf, getpid());
-//             bzero(buf, 1024);
+             int len = read(pipefd[0], buf, sizeof(buf));
+             printf("child recv : %s, pid : %d\n", buf, getpid());
+             bzero(buf, 1024);
         }
         
     }

@@ -5,12 +5,14 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include <map>
 
 using namespace std;
 
 int main() {
     vector<int> weight = {1, 3, 4};
     vector<int> value = {15, 20, 30};
+    map<int, int> m;
     int bagWeight = 4;
 
     // 1.确定dp数组（dp table）以及下标的含义
@@ -40,4 +42,18 @@ int main() {
     // 5.举例推导dp数组
 
     return 0;
+}
+
+void test() {
+    vector<int> weight = {1, 3, 4};
+    vector<int> value = {15, 20, 30};
+    int bagWeight = 4;
+
+    vector<int> bag(bagWeight + 1);
+
+    for (int i = 0; i < weight.size(); i++) {
+        for (int j = bagWeight; j >= weight[i]; j++) {
+            bag[j] = max(bag[j], bag[j - weight[i]] + value[i]);
+        }
+    }
 }
