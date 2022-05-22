@@ -16,19 +16,22 @@ int main() {
         cout << num << ", ";
     }
     cout << endl;
-    return 1;
+    return 0;
 }
 
 vector<int> sort(vector<int> &nums) {
+    if (nums.size() < 2) return nums;
     for (int i = 0; i < nums.size(); i++) {
-        int minIndex = i;
-        for (int j = i + 1; j < nums.size(); j++) {
-            if (nums[j] < nums[minIndex]) {
-                minIndex = j;
+        bool flag = false;
+        for (int j = 0; j < nums.size() - 1 - i; j++) {
+            if (nums[j] > nums[j + 1]) {
+                swap(nums[j], nums[j + 1]);
+                flag = true;
             }
         }
-        if (i != minIndex) {
-            swap(nums[i], nums[minIndex]);
+        // core 优化，如果本轮没有交换，那么就直接结束
+        if (!flag) {
+            break;
         }
     }
     return nums;

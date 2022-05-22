@@ -20,16 +20,17 @@ int main() {
 }
 
 vector<int> sort(vector<int> &nums) {
-    for (int i = 0; i < nums.size(); i++) {
-        int minIndex = i;
-        for (int j = i + 1; j < nums.size(); j++) {
-            if (nums[j] < nums[minIndex]) {
-                minIndex = j;
-            }
+    if (nums.size() < 2) {
+        return nums;
+    }
+    for (int i = 1; i < nums.size(); i++) {
+        int val = nums[i];
+        int j = i - 1;
+        while (j >= 0 && nums[j] > val) {
+            nums[j+1] = nums[j];
+            j--;
         }
-        if (i != minIndex) {
-            swap(nums[i], nums[minIndex]);
-        }
+        nums[j+1] = val;
     }
     return nums;
 }

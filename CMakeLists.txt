@@ -3,9 +3,4 @@ project(cpp_practice)
 
 set(CMAKE_CXX_STANDARD 11)
 
-find_package(Threads)
-
-add_executable(cpp_practice  key_point/stl/unordered_map_practice.cpp)
-#add_executable(cpp_practice  key_point/vector/emplace2.cpp)
-
-target_link_libraries (${PROJECT_NAME} ${CMAKE_THREAD_LIBS_INIT})
+add_executable(cpp_practice  algo/sort/insert2.cpp)
